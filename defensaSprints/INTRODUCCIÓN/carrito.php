@@ -23,7 +23,7 @@
         
         echo "<tr>";
         echo "<td>" . $producto . "</td>";
-        echo "<td>" .  . "</td>";
+        echo "<td>" . $precio . "</td>";
         echo "</tr>";
         $total = $total + $precio;
       }
