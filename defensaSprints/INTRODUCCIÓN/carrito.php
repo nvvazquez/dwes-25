@@ -3,15 +3,10 @@
     <h1>Carrito</h1>
     <?php
     /*Haz que se muestren los dos arrays sin usar arrays asociativos*/
-      $productos = array(
-        "Manzana",
-        "Pan",
-        "Lambo" 
-      );
-      $precios = array(
-        0.5,
-        1.2,
-        1000000.0
+      $carrito = array(
+        "Manzana" => 0.5,
+        "Pan" => 1.2,
+        "Lambo" => 10000000
       );
 
       $total = 0.0;
@@ -19,7 +14,7 @@
       echo "<table border='1'>";
       echo "<tr><th>Producto</th><th>Precio (€)</th></tr>";
 
-      foreach ($productos as $producto) {
+      foreach ($carrito as $producto => $precio) {
         
         echo "<tr>";
         echo "<td>" . $producto . "</td>";
